@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Account extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'account_no',
+        'account_type',
+    ];
 }
