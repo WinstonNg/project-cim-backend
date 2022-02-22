@@ -15,5 +15,8 @@ class Customer extends Model
         'city',
         'state',
         'email',
+        'account_no',
+        'account_type',
+        'balance'
     ];
 }
