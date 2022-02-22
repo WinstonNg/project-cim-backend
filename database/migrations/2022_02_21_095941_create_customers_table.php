@@ -15,14 +15,16 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('branch_id')->constrained('branches');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('contact_no');
             $table->string('address');
             $table->string('city');
             $table->string('state');
-            $table->string('email')->unique();
+            $table->string('email');
+            $table->string('account_no');
+            $table->string('account_type');
+            $table->double('balance', 8, 2);
             $table->timestamps();
         });
     }
